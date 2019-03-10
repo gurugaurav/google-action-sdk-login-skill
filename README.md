@@ -1,4 +1,4 @@
-# google-acion-sdk-login-skill
+# google-action-sdk-login-skill
 
 This is a baseline config which can use Google auth.
 
