@@ -1,0 +1,46 @@
+{
+  "actions": [
+    {
+      "description": "Default Welcome Intent",
+      "name": "MAIN",
+      "fulfillment": {
+        "conversationName": "allquery"
+      },
+      "intent": {
+        "name": "actions.intent.MAIN",
+        "trigger": {
+          "queryPatterns": [
+            "talk to dummy chatbot"
+          ]
+        }
+      }
+    },
+    {
+      "description": "SignIn Intent",
+      "name": "SIGNIN",
+      "fulfillment": {
+        "conversationName": "allquery"
+      },
+      "intent": {
+        "name": "SIGN_IN_REQ",
+        "trigger": {
+          "queryPatterns": [
+            "i want to sign in"
+          ]
+        }
+      }
+    }
+  ],
+  "conversations": {
+    "allquery": {
+      "name": "allquery",
+      "url": "https://9e00d68e.ngrok.io/query",
+      "inDialogIntents": [
+        {
+          "name": "actions.intent.CANCEL"
+        }
+      ]
+    }
+  },
+  "locale": "en"
+}
